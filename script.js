@@ -587,7 +587,7 @@ document.querySelectorAll('.faq-q').forEach(q => {
 
 /* ── CONTACT FORM ── */
 function handleSubmit(e) {
-  e.preventDefault();
+  // e.preventDefault();
   const btn = e.target.querySelector('.form-submit');
   btn.textContent = 'Message sent! ✓';
   btn.style.background = '#3B6E11';
@@ -596,14 +596,6 @@ function handleSubmit(e) {
 
   const myForm = e.target;
   const formData = new FormData(myForm);
-
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString()
-  })
-    .then(() => console.log("Form successfully submitted"))
-    .catch(error => alert(error));
 }
 
 /* ── THEME TOGGLE ── */
