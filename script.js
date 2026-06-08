@@ -593,6 +593,17 @@ function handleSubmit(e) {
   btn.style.background = '#3B6E11';
   btn.style.color = '#fff';
   setTimeout(() => { btn.textContent = 'Send message →'; btn.style.background = ''; btn.style.color = ''; }, 3000);
+
+  const myForm = e.target;
+  const formData = new FormData(myForm);
+
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString()
+  })
+    .then(() => console.log("Form successfully submitted"))
+    .catch(error => alert(error));
 }
 
 /* ── THEME TOGGLE ── */
