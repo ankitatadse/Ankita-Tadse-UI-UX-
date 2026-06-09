@@ -558,6 +558,11 @@
     <div class="modal-carousel" id="modalCarousel">
       <div class="modal-carousel-viewport" id="carouselViewport">
         <div class="modal-carousel-track" id="carouselTrack"></div>
+        <div class="zoom-controls">
+          <button onclick="zoomIn()">+</button>
+          <button onclick="zoomOut()">−</button>
+          <button onclick="resetZoom()">⤾</button>
+        </div>
         <button class="carousel-btn prev hidden" id="carouselPrev" onclick="carouselMove(-1)">&#8249;</button>
         <button class="carousel-btn next hidden" id="carouselNext" onclick="carouselMove(1)">&#8250;</button>
         <div class="carousel-counter" id="carouselCounter"></div>

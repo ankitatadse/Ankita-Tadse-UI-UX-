@@ -288,7 +288,19 @@ function _clampZoomPan(vp, scale, x, y) {
     y: Math.max(-maxY, Math.min(maxY, y)),
   };
 }
+function zoomIn() {
+  const vp = document.getElementById('carouselViewport');
+  _zoomBy(0.5, vp);
+}
 
+function zoomOut() {
+  const vp = document.getElementById('carouselViewport');
+  _zoomBy(-0.5, vp);
+}
+
+function resetZoom() {
+  _resetActiveImageZoom();
+}
 function _applyActiveImageTransform() {
   const img = _getActiveCarouselImage();
   if (!img) return;
