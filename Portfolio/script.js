@@ -15,7 +15,7 @@ const PROJECTS_DATA = {
       "assets/images/screen1.png",
       "assets/images/screen2.png",
       "assets/images/screen3.png"
-    ]
+    ],
     tags: [{ label: 'Mobile App', cls: 't-mobile' }, { label: 'UX Case Study', cls: 't-ux' }, { label: 'Enterprise', cls: 't-dashboard' }],
     title: 'Automotive Service Management App',
     subtitle: 'End-to-end service tracking for mechanics and service advisors — all in one unified mobile platform.',
