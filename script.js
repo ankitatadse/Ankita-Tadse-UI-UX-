@@ -18,7 +18,7 @@ const PROJECTS_DATA = {
 
       /* ADD YOUR OWN: paste more Dribbble image URLs here */
     ],
-    tags: [{label:'Mobile App',cls:'t-mobile'},{label:'UX Case Study',cls:'t-ux'},{label:'Enterprise',cls:'t-dashboard'}],
+    tags: [{ label: 'Mobile App', cls: 't-mobile' }, { label: 'UX Case Study', cls: 't-ux' }, { label: 'Enterprise', cls: 't-dashboard' }],
     title: 'Automotive Service Management App',
     subtitle: 'End-to-end service tracking for mechanics and service advisors — all in one unified mobile platform.',
     role: 'UI/UX Designer', timeline: '10 Weeks', platform: 'Android',
@@ -44,7 +44,7 @@ const PROJECTS_DATA = {
       'https://cdn.dribbble.com/userupload/47571016/file/eb5932117fc2d6ce88151a72a3c26b3e.png',
       'https://cdn.dribbble.com/userupload/47571156/file/fe4939ce5fdb22ee0bee3c62d2a39e27.png?resize=1504x941&vertical=center',
     ],
-    tags: [{label:'Mobile App',cls:'t-mobile'},{label:'Redesign',cls:'t-ux'}],
+    tags: [{ label: 'Mobile App', cls: 't-mobile' }, { label: 'Redesign', cls: 't-ux' }],
     title: 'Bus Booking App Redesign',
     subtitle: 'Reducing booking friction by 40% through a cleaner search flow, redesigned seat map, and a trust-first payment experience.',
     role: 'UX Designer', timeline: '6 Weeks', platform: 'iOS & Android',
@@ -74,7 +74,7 @@ const PROJECTS_DATA = {
       'https://cdn.dribbble.com/userupload/47607161/file/7c98cb33e4d1a9326fb132b0f4492f35.png?resize=1504x784&vertical=center',
       'https://cdn.dribbble.com/userupload/47607162/file/32998a10c87d7de1cc7f45c8895498b1.png?resize=752x&vertical=center',
     ],
-    tags: [{label:'Web App',cls:'t-web'},{label:'Before / After',cls:'t-ux'},{label:'SaaS',cls:'t-dashboard'}],
+    tags: [{ label: 'Web App', cls: 't-web' }, { label: 'Before / After', cls: 't-ux' }, { label: 'SaaS', cls: 't-dashboard' }],
     title: 'Upload Experience Redesign',
     subtitle: 'Transforming a confusing file upload flow into a clear, feedback-rich experience that eliminated user drop-off at a critical product step.',
     role: 'UX + UI Designer', timeline: '4 Weeks', platform: 'Web (SaaS)',
@@ -100,7 +100,7 @@ const PROJECTS_DATA = {
       'https://cdn.dribbble.com/userupload/47868210/file/aec1fe9edf21990fc5943e5224626ae5.png',
       'https://cdn.dribbble.com/userupload/47868210/file/aec1fe9edf21990fc5943e5224626ae5.png',
     ],
-    tags: [{label:'Mobile App',cls:'t-mobile'},{label:'UX Case Study',cls:'t-ux'},{label:'EdTech',cls:'t-brand'}],
+    tags: [{ label: 'Mobile App', cls: 't-mobile' }, { label: 'UX Case Study', cls: 't-ux' }, { label: 'EdTech', cls: 't-brand' }],
     title: 'English Learning App',
     subtitle: 'A gamified mobile experience that turns language learning into a 10-minute daily habit — with streaks, adaptive difficulty, and conversational AI practice.',
     role: 'UI/UX Designer', timeline: '8 Weeks', platform: 'iOS',
@@ -126,7 +126,7 @@ const PROJECTS_DATA = {
       'https://cdn.dribbble.com/userupload/12333697/file/original-f8f0ea5bb88e7784e2a2ced83cec1279.jpg',
       'https://cdn.dribbble.com/userupload/12333697/file/original-f8f0ea5bb88e7784e2a2ced83cec1279.jpg',
     ],
-    tags: [{label:'Web Dashboard',cls:'t-web'},{label:'Healthcare',cls:'t-dashboard'},{label:'Data Viz',cls:'t-ux'}],
+    tags: [{ label: 'Web Dashboard', cls: 't-web' }, { label: 'Healthcare', cls: 't-dashboard' }, { label: 'Data Viz', cls: 't-ux' }],
     title: 'Healthcare Dashboard',
     subtitle: 'A clinician-facing patient analytics platform designed for speed, minimal cognitive load, and zero ambiguity in high-pressure clinical environments.',
     role: 'UI/UX + Data Viz Designer', timeline: '12 Weeks', platform: 'Web (Desktop)',
@@ -152,7 +152,7 @@ const PROJECTS_DATA = {
       'https://cdn.dribbble.com/userupload/9096970/file/original-e286463615f9a1eef818818e73e8c7bf.png',
       'https://cdn.dribbble.com/userupload/9096970/file/original-e286463615f9a1eef818818e73e8c7bf.png',
     ],
-    tags: [{label:'Mobile App',cls:'t-mobile'},{label:'Fintech',cls:'t-ux'}],
+    tags: [{ label: 'Mobile App', cls: 't-mobile' }, { label: 'Fintech', cls: 't-ux' }],
     title: 'Finance Bank App',
     subtitle: 'A personal banking app that answers "how much did I spend this week?" in under 2 seconds — and gets you to any action in 3 taps or fewer.',
     role: 'UI/UX Designer', timeline: '6 Weeks', platform: 'iOS',
@@ -178,7 +178,7 @@ const PROJECTS_DATA = {
       'https://cdn.dribbble.com/userupload/8993623/file/original-304d573b75bcdc86ea548e7aba79900d.png',
       'https://cdn.dribbble.com/userupload/8993623/file/original-304d573b75bcdc86ea548e7aba79900d.png',
     ],
-    tags: [{label:'Wearable',cls:'t-ux'},{label:'UX Case Study',cls:'t-ux'}],
+    tags: [{ label: 'Wearable', cls: 't-ux' }, { label: 'UX Case Study', cls: 't-ux' }],
     title: 'Smartwatch — UX Case Study',
     subtitle: 'Designing for extreme constraints: a 40mm circular display where every interaction must complete in under 5 seconds, one-handed, on the go.',
     role: 'UX Designer', timeline: '5 Weeks', platform: 'WearOS (40mm)',
@@ -206,7 +206,7 @@ const PROJECTS_DATA = {
       'https://cdn.dribbble.com/userupload/47932601/file/2c0454e4f2d87033b45e00af732b4f8f.png?resize=1504x1070&vertical=center',
       'https://cdn.dribbble.com/userupload/47932602/file/afd87e3d72815f2dfd5ce3c1eea15051.png?resize=1504x1070&vertical=center'
     ],
-    tags: [{label:'Web',cls:'t-web'},{label:'A/B Testing',cls:'t-ux'},{label:'Research',cls:'t-brand'}],
+    tags: [{ label: 'Web', cls: 't-web' }, { label: 'A/B Testing', cls: 't-ux' }, { label: 'Research', cls: 't-brand' }],
     title: 'Profile Card A/B Test',
     subtitle: 'A design-led A/B test comparing two layout strategies for user profile cards — using Fitt\'s Law, visual weight, and scan pattern analysis to recommend the higher-converting variant.',
     role: 'UI Designer + UX Researcher', timeline: '3 Weeks', platform: 'Web',
@@ -230,7 +230,7 @@ const PROJECTS_DATA = {
   /* ── UPCOMING PROJECTS ── */
   'dms-web': {
     images: [], coming: true,
-    tags: [{label:'Web App',cls:'t-web'},{label:'Enterprise',cls:'t-dashboard'}],
+    tags: [{ label: 'Web App', cls: 't-web' }, { label: 'Enterprise', cls: 't-dashboard' }],
     title: 'Web DMS — Document Management System',
     subtitle: 'An enterprise platform for managing operations documentation — version control, approval workflows, and full-text search for operations teams.',
     role: 'Lead UI/UX Designer', timeline: 'In Progress', platform: 'Web (Desktop)',
@@ -242,7 +242,7 @@ const PROJECTS_DATA = {
   },
   retailer: {
     images: [], coming: true,
-    tags: [{label:'Mobile App',cls:'t-mobile'},{label:'B2B',cls:'t-ux'}],
+    tags: [{ label: 'Mobile App', cls: 't-mobile' }, { label: 'B2B', cls: 't-ux' }],
     title: 'Retailer\'s App',
     subtitle: 'A B2B mobile app for field sales reps and retailer partners — order entry, inventory, account ledger, and delivery tracking in one place.',
     role: 'UI/UX Designer', timeline: 'In Progress', platform: 'Android',
@@ -254,7 +254,7 @@ const PROJECTS_DATA = {
   },
   clockin: {
     images: [], coming: true,
-    tags: [{label:'Mobile App',cls:'t-mobile'},{label:'Operations',cls:'t-ux'}],
+    tags: [{ label: 'Mobile App', cls: 't-mobile' }, { label: 'Operations', cls: 't-ux' }],
     title: 'Mechanic Clock-In App',
     subtitle: 'A field-facing time-logging tool designed for gloves-on, one-hand use in busy workshop conditions.',
     role: 'UI/UX Designer', timeline: 'In Progress', platform: 'Android',
@@ -455,9 +455,9 @@ function openModal(id) {
     thumbsEl.style.display = '';
     dotsEl.style.display = '';
     _carImgs.forEach((src, i) => {
-      track.innerHTML += `<div class="modal-carousel-slide"><img src="${src}" alt="Screen ${i+1}" loading="lazy"></div>`;
-      dotsEl.innerHTML += `<button class="carousel-dot${i===0?' active':''}" onclick="carouselGoTo(${i})"></button>`;
-      thumbsEl.innerHTML += `<div class="carousel-thumb${i===0?' active':''}" onclick="carouselGoTo(${i})"><img src="${src}" alt="Thumb ${i+1}" loading="lazy"></div>`;
+      track.innerHTML += `<div class="modal-carousel-slide"><img src="${src}" alt="Screen ${i + 1}" loading="lazy"></div>`;
+      dotsEl.innerHTML += `<button class="carousel-dot${i === 0 ? ' active' : ''}" onclick="carouselGoTo(${i})"></button>`;
+      thumbsEl.innerHTML += `<div class="carousel-thumb${i === 0 ? ' active' : ''}" onclick="carouselGoTo(${i})"><img src="${src}" alt="Thumb ${i + 1}" loading="lazy"></div>`;
     });
     _initCarouselZoom();
     _renderCarousel();
@@ -474,7 +474,7 @@ function openModal(id) {
   if (data.role || data.timeline || data.platform) {
     metaEl.style.display = '';
     metaEl.innerHTML = [
-      data.role     ? `<div class="modal-meta-item"><div class="modal-meta-label">My Role</div><div class="modal-meta-value">${data.role}</div></div>` : '',
+      data.role ? `<div class="modal-meta-item"><div class="modal-meta-label">My Role</div><div class="modal-meta-value">${data.role}</div></div>` : '',
       data.timeline ? `<div class="modal-meta-item"><div class="modal-meta-label">Timeline</div><div class="modal-meta-value">${data.timeline}</div></div>` : '',
       data.platform ? `<div class="modal-meta-item"><div class="modal-meta-label">Platform</div><div class="modal-meta-value">${data.platform}</div></div>` : '',
     ].join('');
@@ -622,17 +622,22 @@ function handleSubmit(e) {
 }
 
 /* ── THEME TOGGLE ── */
-(function() {
-  const btn = document.getElementById('themeToggle');
+(function () {
+  const btns = [
+    document.getElementById('themeToggle'),
+    document.getElementById('themeToggleMobile')
+  ].filter(Boolean);
+
   const saved = localStorage.getItem('theme');
   if (saved === 'light') {
     document.documentElement.classList.add('light');
-    btn.textContent = '🌙';
   }
-  btn.addEventListener('click', () => {
-    const isLight = document.documentElement.classList.toggle('light');
-    btn.textContent = isLight ? '🌙' : '☀️';
-    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const isLight = document.documentElement.classList.toggle('light');
+      localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    });
   });
 })();
 
