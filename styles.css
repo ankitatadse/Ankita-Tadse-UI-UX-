@@ -704,6 +704,9 @@ nav {
   text-transform: uppercase;
   letter-spacing: 0.07em;
 }
+/* =========================
+   DARK MODE (Current Theme)
+   ========================= */
 
 .t-mobile {
   background: rgba(24, 95, 165, 0.18);
@@ -711,7 +714,7 @@ nav {
 }
 
 .t-web {
-  background: rgba(59, 110, 17, 0.2);
+  background: rgba(59, 110, 17, 0.20);
   color: #90D45E;
 }
 
@@ -730,6 +733,46 @@ nav {
   color: var(--accent);
 }
 
+/* =========================
+   LIGHT MODE
+   ========================= */
+
+[data-theme="light"] .t-mobile {
+  background: #E8F2FF;
+  color: #0F4C9A;
+  border: 1px solid #B7D7FF;
+}
+
+[data-theme="light"] .t-web {
+  background: #EDF8E7;
+  color: #2E6B0F;
+  border: 1px solid #CBE8B5;
+}
+
+[data-theme="light"] .t-ux {
+  background: #F3F4F6;
+  color: #374151;
+  border: 1px solid #E5E7EB;
+}
+
+[data-theme="light"] .t-brand {
+  background: #FDECF5;
+  color: #A63A75;
+  border: 1px solid #F5C6DF;
+}
+
+[data-theme="light"] .t-dashboard {
+  background: #F6FBE6;
+  color: #567A00;
+  border: 1px solid #DCE9B2;
+}
+.ptag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
 .proj-title {
   font-size: 0.9375rem;
   font-weight: 600;
