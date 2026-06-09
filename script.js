@@ -360,9 +360,18 @@ function _initCarouselZoom() {
     _applyActiveImageTransform();
   });
 
-  vp.addEventListener('click', e => {
-    if (_zoomScale > 1 || (e.detail && e.detail > 1)) return;
-    _zoomBy(1, vp);
+  vp.addEventListener('dblclick', e => {
+    e.preventDefault();
+
+    if (_zoomScale === 1) {
+      _zoomScale = 2;
+    } else {
+      _zoomScale = 1;
+      _zoomPanX = 0;
+      _zoomPanY = 0;
+    }
+
+    _applyActiveImageTransform();
   });
 
   vp.addEventListener('dblclick', e => {
