@@ -11,13 +11,11 @@ const PROJECTS_DATA = {
 
   automotive: {
     images: [
-      'https://cdn.dribbble.com/userupload/47955111/file/c7bf1de20d115bdfdb0b68e42fb51a01.png',
-      'https://cdn.dribbble.com/userupload/47955115/file/7749a8c0a1b4a7e92f9cf4dcd9b544f2.png?resize=1504x1128&vertical=center',
-      'https://cdn.dribbble.com/userupload/47955114/file/145ec9f95af3b339375c8275f73c2fbf.png?resize=1504x1128&vertical=center',
-      'https://cdn.dribbble.com/userupload/47955116/file/7000a09f176373132db2a833135af5d5.png?resize=1504x1128&vertical=center'
-
-      /* ADD YOUR OWN: paste more Dribbble image URLs here */
-    ],
+      "assets/images/automotive-thumb.png",
+      "assets/images/screen1.png",
+      "assets/images/screen2.png",
+      "assets/images/screen3.png"
+    ]
     tags: [{ label: 'Mobile App', cls: 't-mobile' }, { label: 'UX Case Study', cls: 't-ux' }, { label: 'Enterprise', cls: 't-dashboard' }],
     title: 'Automotive Service Management App',
     subtitle: 'End-to-end service tracking for mechanics and service advisors — all in one unified mobile platform.',
