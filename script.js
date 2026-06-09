@@ -202,7 +202,9 @@ const PROJECTS_DATA = {
   abtest: {
     images: [
       'https://cdn.dribbble.com/userupload/47932599/file/c2c551c02c2b273ddedf1046fdb71438.png',
-      'https://cdn.dribbble.com/userupload/47932603/file/2f57477d749daaf5fbec7b652e73d91b.png?resize=1504x1070&vertical=center'
+      'https://cdn.dribbble.com/userupload/47932603/file/2f57477d749daaf5fbec7b652e73d91b.png?resize=1504x1070&vertical=center',
+      'https://cdn.dribbble.com/userupload/47932601/file/2c0454e4f2d87033b45e00af732b4f8f.png?resize=1504x1070&vertical=center',
+      'https://cdn.dribbble.com/userupload/47932602/file/afd87e3d72815f2dfd5ce3c1eea15051.png?resize=1504x1070&vertical=center'
     ],
     tags: [{label:'Web',cls:'t-web'},{label:'A/B Testing',cls:'t-ux'},{label:'Research',cls:'t-brand'}],
     title: 'Profile Card A/B Test',
