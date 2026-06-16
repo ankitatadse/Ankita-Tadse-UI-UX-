@@ -11,10 +11,11 @@ const PROJECTS_DATA = {
 
   automotive: {
     images: [
-      "assets/images/automotive-thumb.png",
-      "assets/images/screen1.png",
-      "assets/images/screen2.png",
-      "assets/images/screen3.png"
+      "images/Project Cards/Dribbble Shot Mobile - 16.png",
+      "images/Project Cards/Dribbble Shot Mobile - 31.png",
+      "images/Project Cards/Dribbble Shot Mobile - 4.png",
+      "images/Project Cards/Dribbble Shot Mobile - 5.png",
+      "images/Project Cards/Dribbble Shot Mobile - 30.png"
     ],
     tags: [{ label: 'Mobile App', cls: 't-mobile' }, { label: 'UX Case Study', cls: 't-ux' }, { label: 'Enterprise', cls: 't-dashboard' }],
     title: 'Automotive Service Management App',
@@ -62,37 +63,6 @@ const PROJECTS_DATA = {
     ],
     tools: ['Figma', 'UX Audit', 'Competitive Analysis', 'Wireframing', 'Usability Testing'],
   },
-
-  upload: {
-    images: [
-      'https://cdn.dribbble.com/userupload/47607156/file/1c38e9845bb4f2e8644f3b703f520ea1.png',
-      'https://cdn.dribbble.com/userupload/47607158/file/e7e1273712757af8de125ba6aab87b1f.png?resize=1504x449&vertical=center',
-      'https://cdn.dribbble.com/userupload/47607159/file/2c27e963fb8ab263c6a21513247bd503.png?resize=1504x716&vertical=center',
-      'https://cdn.dribbble.com/userupload/47607160/file/11dca5b1bc460163606a6ff086fc1442.png?resize=1504x716&vertical=center',
-      'https://cdn.dribbble.com/userupload/47607161/file/7c98cb33e4d1a9326fb132b0f4492f35.png?resize=1504x784&vertical=center',
-      'https://cdn.dribbble.com/userupload/47607162/file/32998a10c87d7de1cc7f45c8895498b1.png?resize=752x&vertical=center',
-    ],
-    tags: [{ label: 'Web App', cls: 't-web' }, { label: 'Before / After', cls: 't-ux' }, { label: 'SaaS', cls: 't-dashboard' }],
-    title: 'Upload Experience Redesign',
-    subtitle: 'Transforming a confusing file upload flow into a clear, feedback-rich experience that eliminated user drop-off at a critical product step.',
-    role: 'UX + UI Designer', timeline: '4 Weeks', platform: 'Web (SaaS)',
-    overview: 'A SaaS product\'s file upload flow was causing silent failures — users were uploading files, getting no clear confirmation, and walking away thinking it worked. The redesign focused entirely on making system status visible at every stage.',
-    problem: 'Three core problems: (1) No visible progress during upload — users couldn\'t tell if anything was happening. (2) Error messages were cryptic strings like "Error 415" with no guidance on how to fix them. (3) The success state looked identical to the idle state, so users uploaded the same file twice regularly.',
-    solution: 'Redesigned all 5 upload states — Idle, Dragging, Uploading (with animated progress bar), Success (distinct green confirmation), and Error (human-readable message + fix instruction). Introduced a drag-and-drop zone with clear affordance cues. Added a file preview thumbnail post-upload so users could verify what was received.',
-    outcomes: [
-      { n: '5', label: 'Distinct upload states designed' },
-      { n: '0', label: 'Cryptic error codes in final design' },
-      { n: 'Before/After', label: 'Full comparison documented' },
-    ],
-    process: [
-      { step: '01', title: 'Identify', desc: 'Audited session recordings to pinpoint where users stalled or repeated the upload action. Drop-off and double-upload were measurable.' },
-      { step: '02', title: 'Map States', desc: 'Mapped every possible upload state and edge case — large files, network drops, wrong formats, partial uploads.' },
-      { step: '03', title: 'Redesign', desc: 'Designed all states in both light and dark mode. Focused on micro-copy first — then visual states wrapped around clear language.' },
-      { step: '04', title: 'Before/After', desc: 'Documented the full before-and-after comparison with annotations for developer handoff and stakeholder alignment.' },
-    ],
-    tools: ['Figma', 'Before/After Design', 'UX Writing', 'Component Design', 'SaaS UX'],
-  },
-
   english: {
     images: [
       'https://cdn.dribbble.com/userupload/47868210/file/aec1fe9edf21990fc5943e5224626ae5.png',
