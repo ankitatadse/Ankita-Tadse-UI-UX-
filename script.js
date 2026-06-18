@@ -1,55 +1,127 @@
-/* ── PROJECTS DATA — Professional Case Study Structure ─────────────
+﻿/* ── PROJECTS DATA — Professional Case Study Structure ─────────────
    Each project has:
    - images[]: Array of HD image URLs (carousel). First = cover card image.
+   - heroImage: Single hero image shown at the top of the modal.
    - tags, title, subtitle, role, timeline, platform
-   - overview, problem, solution
-   - outcomes[]: [{n, label}] — key metrics / results
-   - process[]: [{step, title, desc}] — design process steps
+   - aboutProject (+ aboutImage)
+   - userChallenges[] (+ challengesImage)
+   - mySolution (+ solutionImage)
+   - designSystem: { typography, colors, components[] } (+ designSystemImage)
+   - outcomes[]: [{n, label}], successMetrics text (+ metricsImage)
+   - keyTakeaway (+ takeawayImage)
    - tools[]
    ──────────────────────────────────────────────────────────────── */
 const PROJECTS_DATA = {
 
-  automotive: {
+  "Service operation dashboard": {
     images: [
-      "images/Project Cards/Dribbble Shot Mobile - 16.png",
-      "images/Project Cards/Dribbble Shot Mobile - 31.png",
-      "images/Project Cards/Dribbble Shot Mobile - 4.png",
-      "images/Project Cards/Dribbble Shot Mobile - 5.png",
-      "images/Project Cards/Dribbble Shot Mobile - 30.png"
+      "https://cdn.dribbble.com/userupload/48072469/file/ad33055d2230abb169cf52ffc80d0c6b.png?resize=1504x1128&vertical=center",
+      "https://cdn.dribbble.com/userupload/48072471/file/48c8427f4d7c0d883bce807e512357fb.png?resize=1504x1128&vertical=center",
+      "https://cdn.dribbble.com/userupload/48072470/file/cdad10d8536f10a27a14effa468608ef.png?resize=1504x1128&vertical=center",
+      "https://cdn.dribbble.com/userupload/48072472/file/54c38142eacda86834eda2b904adc3ef.png?resize=1504x1128&vertical=center",
     ],
-    tags: [{ label: 'Mobile App', cls: 't-mobile' }, { label: 'UX Case Study', cls: 't-ux' }, { label: 'Enterprise', cls: 't-dashboard' }],
-    title: 'Automotive Service Management App',
-    subtitle: 'End-to-end service tracking for mechanics and service advisors — all in one unified mobile platform.',
-    role: 'UI/UX Designer', timeline: '10 Weeks', platform: 'Android',
-    overview: 'Service App is a mobile service management solution designed for automotive dealerships to streamline service appointments, job card management, and workshop operations.The experience enables service advisors to create appointments, manage customer vehicles, track service progress, and handle job cards efficiently—all from a single mobile application.',
-    problem: 'Service advisors spend significant time creating and managing service appointments manually.Tracking vehicle service status across multiple customers can be difficult.Job card information is often scattered across different systems.Workshop teams need quick access to customer and vehicle details while on the move.',
-    solution: 'Quick Appointment Creation - A guided appointment flow helps advisors register customer vehicles and schedule service visits with minimal effort.Centralized Dashboard - All service activities, appointments, and job card summaries are accessible from a single dashboard for faster decision- making.Mobile Job Card Management - Service advisors can view, update, and track job cards directly from their mobile devices.Real - Time Service Visibility - Clear status indicators help users monitor appointment progress, open jobs, invoices, and vehicle delivery stages.',
+    heroImage: "https://cdn.dribbble.com/userupload/48072469/file/ad33055d2230abb169cf52ffc80d0c6b.png?resize=1504x1128&vertical=center",
+    tags: [{ label: 'Web Dashboard', cls: 't-web' }, { label: 'Service Operations', cls: 't-dashboard' }, { label: 'Data Viz', cls: 't-ux' }],
+    title: 'Service Operation Dashboard',
+    subtitle: 'A centralized operations dashboard built for an enterprise automotive company to streamline technician management, job tracking, and operational monitoring.',
+    role: 'UI/UX Designer', timeline: '10 Weeks', platform: 'Web',
+    aboutProject: 'This project focused on designing a centralized service operations dashboard for an enterprise automotive company to streamline technician management, job tracking, and operational monitoring. The goal was to transform complex business requirements into an intuitive digital experience that enables supervisors and service managers to monitor performance, track active jobs, and make faster operational decisions.',
+    aboutImage: "https://cdn.dribbble.com/userupload/48072471/file/48c8427f4d7c0d883bce807e512357fb.png?resize=1504x1128&vertical=center",
+    userChallenges: [
+      'Difficulty tracking multiple service jobs simultaneously.',
+      'Limited visibility into technician workload and productivity.',
+      'Manual monitoring of service progress and job status.',
+      'Critical operational data scattered across multiple systems.',
+    ],
+    challengesImage: "https://cdn.dribbble.com/userupload/48072470/file/cdad10d8536f10a27a14effa468608ef.png?resize=1504x1128&vertical=center",
+    mySolution: 'Designed a role-based dashboard that provides real-time visibility into active jobs, technician activities, and operational KPIs. The interface prioritizes high-impact metrics, job status monitoring, and quick actions, allowing users to identify bottlenecks and manage service operations efficiently.',
+    solutionImage: "https://cdn.dribbble.com/userupload/48072472/file/54c38142eacda86834eda2b904adc3ef.png?resize=1504x1128&vertical=center",
+    designSystem: {
+      typography: 'Clear hierarchy for KPIs, data tables, and operational alerts.',
+      colors: 'Professional blue theme to establish trust and consistency.',
+      components: [
+        'Secure Login Portal',
+        'Success Notifications',
+        'KPI Summary Cards',
+        'Active Job Registry',
+        'Status Indicators',
+        'Quick Action Controls',
+        'Global Search & Navigation',
+      ],
+    },
+    designSystemImage: "https://cdn.dribbble.com/userupload/48072470/file/cdad10d8536f10a27a14effa468608ef.png?resize=1504x1128&vertical=center",
+    successMetrics: 'Measure the effectiveness of the solution through task completion speed, operational visibility, dashboard engagement, and reduction in manual monitoring efforts.',
     outcomes: [
       { n: '3×', label: 'Reducing administrative effort' },
       { n: '60%', label: 'Reduction in customer follow-up calls' },
       { n: '100%', label: 'Real-time visibility for service advisors' },
     ],
-    process: [
-      { step: '01', title: 'Discover', desc: 'Shadowed mechanics and interviewed 6 service managers across 2 workshops. Mapped the full service lifecycle from drop-off to delivery.' },
-      { step: '02', title: 'Define', desc: 'Identified 3 core user roles with distinct needs. Created role-based user journeys and a prioritised feature list based on frequency and pain severity.' },
-      { step: '03', title: 'Design', desc: 'Low-fi wireframes → component library → high-fidelity screens across all 3 roles. 4 rounds of iteration with stakeholder feedback.' },
-      { step: '04', title: 'Deliver', desc: 'Figma prototype handed off to dev with annotated specs, component states, and a responsive design system for future scaling.' },
+    metricsImage: "https://cdn.dribbble.com/userupload/48072471/file/48c8427f4d7c0d883bce807e512357fb.png?resize=1504x1128&vertical=center",
+    takeawayImage: "https://cdn.dribbble.com/userupload/48072472/file/54c38142eacda86834eda2b904adc3ef.png?resize=1504x1128&vertical=center",
+    keyTakeaway: 'By centralizing operational data and presenting it through a clear, action-oriented dashboard, the solution helps service teams make informed decisions faster, improve workflow visibility, and enhance overall operational efficiency.',
+    tools: ['Figma', 'FigJam', 'Prototyping', 'User Interviews', 'Dashboard Design', 'Design Systems'],
+  },
+  automotive: {
+    images: [
+      "https://cdn.dribbble.com/userupload/47955112/file/04abd982d3e2a5a5eeb260da6df6727d.png?resize=1504x&vertical=center",
+      "https://cdn.dribbble.com/userupload/47955113/file/dcc3d1215f8ede27adb04250d6a277b6.png?resize=1504x&vertical=center",
+      "https://cdn.dribbble.com/userupload/47955115/file/7749a8c0a1b4a7e92f9cf4dcd9b544f2.png?resize=1504x&vertical=center",
+      "https://cdn.dribbble.com/userupload/47955114/file/145ec9f95af3b339375c8275f73c2fbf.png?resize=1504x&vertical=center",
+      "https://cdn.dribbble.com/userupload/47955116/file/7000a09f176373132db2a833135af5d5.png?resize=1504x&vertical=center"
     ],
+    heroImage: "https://cdn.dribbble.com/userupload/47955112/file/04abd982d3e2a5a5eeb260da6df6727d.png?resize=1504x&vertical=center",
+    tags: [{ label: 'Mobile App', cls: 't-mobile' }, { label: 'UX Case Study', cls: 't-ux' }, { label: 'Enterprise', cls: 't-dashboard' }],
+    title: 'Automotive Service Management App',
+    subtitle: 'End-to-end service tracking for mechanics and service advisors — all in one unified mobile platform.',
+    role: 'UI/UX Designer', timeline: '10 Weeks', platform: 'Android',
+    aboutProject: 'Service App is a mobile service management solution designed for automotive dealerships to streamline service appointments, job card management, and workshop operations. The experience enables service advisors to create appointments, manage customer vehicles, track service progress, and handle job cards efficiently—all from a single mobile application.',
+    aboutImage: "https://cdn.dribbble.com/userupload/47955112/file/04abd982d3e2a5a5eeb260da6df6727d.png?resize=1504x&vertical=center",
+    userChallenges: [
+      'Service advisors spend significant time creating and managing service appointments manually.',
+      'Tracking vehicle service status across multiple customers can be difficult.',
+      'Job card information is often scattered across different systems.',
+      'Workshop teams need quick access to customer and vehicle details while on the move.'
+    ],
+    challengesImage: "https://cdn.dribbble.com/userupload/47955113/file/dcc3d1215f8ede27adb04250d6a277b6.png?resize=1504x&vertical=center",
+    mySolution: 'Quick Appointment Creation — a guided appointment flow; Centralized Dashboard — all service activities and job card summaries in one place; Mobile Job Card Management — view, update, and track job cards from mobile; Real-Time Service Visibility — clear status indicators and quick actions for daily operations.',
+    solutionImage: "https://cdn.dribbble.com/userupload/47955115/file/7749a8c0a1b4a7e92f9cf4dcd9b544f2.png?resize=1504x&vertical=center",
+    designSystem: {
+      typography: 'Inter for clean readability and strong visual hierarchy.',
+      colors: 'Purple primary brand with supporting status and action colors.',
+      components: [
+        'Appointment cards',
+        'Progress steppers',
+        'Search bars',
+        'Quick actions',
+        'Forms',
+        'CTA components',
+        'Dashboard analytics widgets'
+      ]
+    },
+    designSystemImage: "https://cdn.dribbble.com/userupload/47955114/file/145ec9f95af3b339375c8275f73c2fbf.png?resize=1504x&vertical=center",
+    successMetrics: 'The application simplifies dealership service operations by reducing administrative effort, improving service visibility, and enabling service advisors to manage customer interactions and workshop activities more efficiently from anywhere.',
+    metricsImage: "https://cdn.dribbble.com/userupload/47955116/file/7000a09f176373132db2a833135af5d5.png?resize=1504x&vertical=center",
+    keyTakeaway: 'A mobile-first workflow reduces admin overhead and delivers real-time operational visibility for service teams.',
     tools: ['Figma', 'FigJam', 'Prototyping', 'User Interviews', 'Mobile Design', 'Design Systems'],
   },
 
   bus: {
     images: [
-      'https://cdn.dribbble.com/userupload/47571016/file/eb5932117fc2d6ce88151a72a3c26b3e.png',
-      'https://cdn.dribbble.com/userupload/47571156/file/fe4939ce5fdb22ee0bee3c62d2a39e27.png?resize=1504x941&vertical=center',
+      'https://cdn.dribbble.com/userupload/47571017/file/159f0145f4df13fe543033d8fed05ef8.png?resize=1504x&vertical=center',
+      'https://cdn.dribbble.com/userupload/47571156/file/fe4939ce5fdb22ee0bee3c62d2a39e27.png?resize=1504x&vertical=center'
     ],
+    heroImage: 'https://cdn.dribbble.com/userupload/47571017/file/159f0145f4df13fe543033d8fed05ef8.png?resize=1504x&vertical=center',
     tags: [{ label: 'Mobile App', cls: 't-mobile' }, { label: 'Redesign', cls: 't-ux' }],
     title: 'Bus Booking App Redesign',
-    subtitle: 'Reducing booking friction by 40% through a cleaner search flow, redesigned seat map, and a trust-first payment experience.',
+    subtitle: 'A modern reimagination of a bus booking experience focused on simplicity, speed, and decision clarity.',
     role: 'UX Designer', timeline: '6 Weeks', platform: 'iOS & Android',
-    overview: 'A full UX audit and redesign of an existing intercity bus booking application. The original app suffered from high drop-off at the payment step, confusing seat selection, and an information hierarchy that forced users to re-read screens multiple times.',
-    problem: 'The original app had a 5-step booking flow with no progress indicator, a seat map that showed availability in 3 confusing colour states, and a payment summary that buried the total fare. Users were abandoning at checkout — not because of pricing, but because they didn\'t trust what they were buying.',
-    solution: 'Simplified to a 3-step funnel with a sticky progress bar. Redesigned the seat map with clear Available / Selected / Occupied states, large touch targets, and coach-level labelling. Introduced a transparent fare breakdown on the summary screen, and replaced the generic error states with human-readable messages.',
+    aboutProject: 'A modern reimagination of a bus booking experience focused on simplicity, speed, and decision clarity.',
+    aboutImage: 'https://cdn.dribbble.com/userupload/47571017/file/159f0145f4df13fe543033d8fed05ef8.png?resize=1504x&vertical=center',
+    userChallenges: [
+      'Users often struggle with cluttered interfaces, overwhelming options, and difficulty comparing buses quickly.'
+    ],
+    challengesImage: 'https://cdn.dribbble.com/userupload/47571156/file/fe4939ce5fdb22ee0bee3c62d2a39e27.png?resize=1504x&vertical=center',
+    mySolution: 'Designed a clean, minimal, and intuitive interface that helps users quickly search routes, compare buses at a glance, and make faster booking decisions. Introduced card-based listings, simplified search flow, and trust indicators like ratings and seats-left.',
     outcomes: [
       { n: '3→1', label: 'Booking steps reduced' },
       { n: '40%', label: 'Est. drop-off reduction' },
@@ -61,168 +133,236 @@ const PROJECTS_DATA = {
       { step: '03', title: 'Wireframe & Test', desc: 'Paper wireframes → Figma lo-fi → tested with 5 users. Iterated the seat map 3 times before reaching 0 confusion errors.' },
       { step: '04', title: 'Hi-Fi Delivery', desc: 'Complete hi-fi screens for 20+ states including empty, loading, error, success, and edge cases across both themes.' },
     ],
-    tools: ['Figma', 'UX Audit', 'Competitive Analysis', 'Wireframing', 'Usability Testing'],
-  },
-
-  upload: {
-    images: [
-      'https://cdn.dribbble.com/userupload/47607156/file/1c38e9845bb4f2e8644f3b703f520ea1.png',
-      'https://cdn.dribbble.com/userupload/47607158/file/e7e1273712757af8de125ba6aab87b1f.png?resize=1504x449&vertical=center',
-      'https://cdn.dribbble.com/userupload/47607159/file/2c27e963fb8ab263c6a21513247bd503.png?resize=1504x716&vertical=center',
-      'https://cdn.dribbble.com/userupload/47607160/file/11dca5b1bc460163606a6ff086fc1442.png?resize=1504x716&vertical=center',
-      'https://cdn.dribbble.com/userupload/47607161/file/7c98cb33e4d1a9326fb132b0f4492f35.png?resize=1504x784&vertical=center',
-      'https://cdn.dribbble.com/userupload/47607162/file/32998a10c87d7de1cc7f45c8895498b1.png?resize=752x&vertical=center',
-    ],
-    tags: [{ label: 'Web App', cls: 't-web' }, { label: 'Before / After', cls: 't-ux' }, { label: 'SaaS', cls: 't-dashboard' }],
-    title: 'Upload Experience Redesign',
-    subtitle: 'Transforming a confusing file upload flow into a clear, feedback-rich experience that eliminated user drop-off at a critical product step.',
-    role: 'UX + UI Designer', timeline: '4 Weeks', platform: 'Web (SaaS)',
-    overview: 'A SaaS product\'s file upload flow was causing silent failures — users were uploading files, getting no clear confirmation, and walking away thinking it worked. The redesign focused entirely on making system status visible at every stage.',
-    problem: 'Three core problems: (1) No visible progress during upload — users couldn\'t tell if anything was happening. (2) Error messages were cryptic strings like "Error 415" with no guidance on how to fix them. (3) The success state looked identical to the idle state, so users uploaded the same file twice regularly.',
-    solution: 'Redesigned all 5 upload states — Idle, Dragging, Uploading (with animated progress bar), Success (distinct green confirmation), and Error (human-readable message + fix instruction). Introduced a drag-and-drop zone with clear affordance cues. Added a file preview thumbnail post-upload so users could verify what was received.',
-    outcomes: [
-      { n: '5', label: 'Distinct upload states designed' },
-      { n: '0', label: 'Cryptic error codes in final design' },
-      { n: 'Before/After', label: 'Full comparison documented' },
-    ],
-    process: [
-      { step: '01', title: 'Identify', desc: 'Audited session recordings to pinpoint where users stalled or repeated the upload action. Drop-off and double-upload were measurable.' },
-      { step: '02', title: 'Map States', desc: 'Mapped every possible upload state and edge case — large files, network drops, wrong formats, partial uploads.' },
-      { step: '03', title: 'Redesign', desc: 'Designed all states in both light and dark mode. Focused on micro-copy first — then visual states wrapped around clear language.' },
-      { step: '04', title: 'Before/After', desc: 'Documented the full before-and-after comparison with annotations for developer handoff and stakeholder alignment.' },
-    ],
-    tools: ['Figma', 'Before/After Design', 'UX Writing', 'Component Design', 'SaaS UX'],
+    tools: ['Figma', 'UI Design', 'UX Thinking'],
   },
   english: {
     images: [
-      'https://cdn.dribbble.com/userupload/47868210/file/aec1fe9edf21990fc5943e5224626ae5.png',
-      'https://cdn.dribbble.com/userupload/47868210/file/aec1fe9edf21990fc5943e5224626ae5.png',
+      'https://cdn.dribbble.com/userupload/47868210/file/aec1fe9edf21990fc5943e5224626ae5.png'
     ],
+    heroImage: 'https://cdn.dribbble.com/userupload/47868210/file/aec1fe9edf21990fc5943e5224626ae5.png',
     tags: [{ label: 'Mobile App', cls: 't-mobile' }, { label: 'UX Case Study', cls: 't-ux' }, { label: 'EdTech', cls: 't-brand' }],
     title: 'English Learning App',
     subtitle: 'A gamified mobile experience that turns language learning into a 10-minute daily habit — with streaks, adaptive difficulty, and conversational AI practice.',
     role: 'UI/UX Designer', timeline: '8 Weeks', platform: 'iOS',
-    overview: 'Existing language apps felt like homework — long sessions, passive learning, and no real motivation loop. This concept rethinks English learning as a series of short, high-engagement micro-sessions built around habit science: keep it under 10 minutes, reward consistency, and make speaking less scary.',
-    problem: 'The majority of language learners quit by Day 3. Not because the content is too hard — but because the experience feels like a chore. Long lessons, no visible progress, and fear of "speaking to no one" all compound into abandonment. The real challenge was designing for motivation, not just instruction.',
-    solution: 'A compact daily lesson format capped at 10 minutes, with a visual streak system that makes consistency feel meaningful. An AI chatbot for low-stakes conversation practice. Personalised learning path from an initial 3-minute assessment. Gamified badges for milestones — not just streaks — to reward depth, not just habit.',
+    aboutProject: 'Existing language apps felt like homework — long sessions, passive learning, and no real motivation loop. This concept rethinks English learning as a series of short, high-engagement micro-sessions built around habit science: keep it under 10 minutes, reward consistency, and make speaking less scary.',
+    aboutImage: 'https://cdn.dribbble.com/userupload/47868210/file/aec1fe9edf21990fc5943e5224626ae5.png',
+    userChallenges: [
+      'Most learners quit by Day 3 due to long sessions and low motivation.',
+      'No visible progress or low-stakes speaking practice increases anxiety.'
+    ],
+    challengesImage: 'https://cdn.dribbble.com/userupload/47868210/file/aec1fe9edf21990fc5943e5224626ae5.png',
+    mySolution: 'A compact daily lesson format capped at 10 minutes, with a visual streak system, an AI chatbot for low-stakes conversation practice, and a personalised learning path from an initial assessment. Gamified badges reward depth and mastery, not just streaks.',
+    solutionImage: 'https://cdn.dribbble.com/userupload/47868210/file/aec1fe9edf21990fc5943e5224626ae5.png',
+    designSystem: {
+      typography: 'Poppins for friendly, readable UI at small sizes.',
+      colors: 'Accessible, vibrant accent palette for encouragement and feedback.',
+      components: [
+        'Lesson cards',
+        'Streak & progress bar',
+        'Conversational chatbot UI',
+        'Badge & achievement modal'
+      ]
+    },
+    designSystemImage: 'https://cdn.dribbble.com/userupload/47868210/file/aec1fe9edf21990fc5943e5224626ae5.png',
+    successMetrics: 'Engagement (daily active users), retention (Day-3 retention), and average lesson completion rate.',
+    metricsImage: 'https://cdn.dribbble.com/userupload/47868210/file/aec1fe9edf21990fc5943e5224626ae5.png',
+    keyTakeaway: 'Short, habit-focused lessons with low-friction speaking practice increase retention and reduce early drop-off.',
+    takeawayImage: 'https://cdn.dribbble.com/userupload/47868210/file/aec1fe9edf21990fc5943e5224626ae5.png',
     outcomes: [
       { n: '10 min', label: 'Max daily lesson length' },
       { n: '3 days', label: 'Target habit formation window' },
-      { n: '4 modes', label: 'Learning types: Read, Listen, Speak, Write' },
+      { n: '4 modes', label: 'Learning types: Read, Listen, Speak, Write' }
     ],
     process: [
-      { step: '01', title: 'Research', desc: 'Reviewed behavioral science literature on habit formation (Fogg BJ Model). Ran a diary study with 5 language learners over 2 weeks to understand their natural drop-off patterns.' },
-      { step: '02', title: 'Concept', desc: 'Sketched 3 competing directions: quiz-heavy, story-based, and conversation-first. Tested concepts with 4 users — story-based + conversation hybrid won clearly.' },
-      { step: '03', title: 'Design', desc: '60+ screens across onboarding, lesson flows, streak system, chatbot, and progress views. Accessible colour system designed to work across low-literacy contexts.' },
-      { step: '04', title: 'Prototype', desc: 'Fully interactive Figma prototype with micro-animations for lesson completion, XP gain, and streak milestones.' },
+      { step: '01', title: 'Research', desc: 'Reviewed habit formation literature and ran a diary study to identify drop-off points.' },
+      { step: '02', title: 'Concept', desc: 'Tested competing lesson formats and selected a conversation-first hybrid.' },
+      { step: '03', title: 'Design', desc: 'Designed accessible patterns and a gamified progression system.' },
+      { step: '04', title: 'Prototype', desc: 'Built an interactive prototype and validated with users.' }
     ],
     tools: ['Figma', 'Gamification Design', 'User Research', 'Prototyping', 'Habit Design', 'AI UX'],
   },
 
   healthcare: {
     images: [
-      'https://cdn.dribbble.com/userupload/12333697/file/original-f8f0ea5bb88e7784e2a2ced83cec1279.jpg',
-      'https://cdn.dribbble.com/userupload/12333697/file/original-f8f0ea5bb88e7784e2a2ced83cec1279.jpg',
+      'https://cdn.dribbble.com/userupload/12333697/file/original-f8f0ea5bb88e7784e2a2ced83cec1279.jpg'
     ],
+    heroImage: 'https://cdn.dribbble.com/userupload/12333697/file/original-f8f0ea5bb88e7784e2a2ced83cec1279.jpg',
     tags: [{ label: 'Web Dashboard', cls: 't-web' }, { label: 'Healthcare', cls: 't-dashboard' }, { label: 'Data Viz', cls: 't-ux' }],
     title: 'Healthcare Dashboard',
     subtitle: 'A clinician-facing patient analytics platform designed for speed, minimal cognitive load, and zero ambiguity in high-pressure clinical environments.',
     role: 'UI/UX + Data Viz Designer', timeline: '12 Weeks', platform: 'Web (Desktop)',
-    overview: 'Designed for doctors and clinical staff who have seconds — not minutes — to make data-informed decisions. The dashboard consolidates patient vitals, upcoming appointments, department metrics, and alert flags into a single view, eliminating the need to switch between 4 separate hospital systems.',
-    problem: 'Clinicians at a mid-sized hospital were switching between 4 systems to get a complete picture of a single patient: the EHR, a scheduling tool, a vitals monitor, and a department analytics dashboard. The cognitive cost of this context-switching was directly linked to documentation errors and delayed responses to critical alerts.',
-    solution: 'A unified dashboard with a patient-centric information architecture. Priority alerts surface at the top — anything requiring immediate action is never more than one glance away. Patient cards use progressive disclosure: a scannable summary view expands into full records only when needed. Department-level metrics are visible in context, not buried in a separate analytics module.',
+    aboutProject: 'Designed for doctors and clinical staff who have seconds — not minutes — to make data-informed decisions. The dashboard consolidates patient vitals, upcoming appointments, department metrics, and alert flags into a single view, eliminating the need to switch between 4 separate hospital systems.',
+    aboutImage: 'https://cdn.dribbble.com/userupload/12333697/file/original-f8f0ea5bb88e7784e2a2ced83cec1279.jpg',
+    userChallenges: [
+      'Switching between multiple systems caused delayed responses to critical alerts and documentation errors.',
+      'High cognitive load due to scattered patient data across tools.'
+    ],
+    challengesImage: 'https://cdn.dribbble.com/userupload/12333697/file/original-f8f0ea5bb88e7784e2a2ced83cec1279.jpg',
+    mySolution: 'A unified dashboard with patient-centric information architecture, priority alerts at the top, and progressive disclosure for patient cards so clinicians can get the right information at a glance.',
+    solutionImage: 'https://cdn.dribbble.com/userupload/12333697/file/original-f8f0ea5bb88e7784e2a2ced83cec1279.jpg',
+    designSystem: {
+      typography: 'Legible system with clear hierarchy optimized for quick glances.',
+      colors: 'High-contrast neutrals with accent states for alerts and critical metrics.',
+      components: [
+        'Patient cards',
+        'Priority alert banners',
+        'Data tables with sparklines',
+        'Progressive disclosure panels'
+      ]
+    },
+    designSystemImage: 'https://cdn.dribbble.com/userupload/12333697/file/original-f8f0ea5bb88e7784e2a2ced83cec1279.jpg',
+    successMetrics: 'Reduced time-to-find critical patient info and consolidated multiple systems into one workflow to reduce errors.',
+    metricsImage: 'https://cdn.dribbble.com/userupload/12333697/file/original-f8f0ea5bb88e7784e2a2ced83cec1279.jpg',
+    keyTakeaway: 'Centralizing clinical data into a glanceable dashboard reduces cognitive load and speeds critical decision-making in high-pressure environments.',
+    takeawayImage: 'https://cdn.dribbble.com/userupload/12333697/file/original-f8f0ea5bb88e7784e2a2ced83cec1279.jpg',
     outcomes: [
       { n: '4→1', label: 'Systems consolidated into one view' },
       { n: '↓ 35%', label: 'Time-to-find critical patient info' },
-      { n: '0', label: 'Unnecessary data density on primary view' },
+      { n: '0', label: 'Unnecessary data density on primary view' }
     ],
     process: [
-      { step: '01', title: 'Contextual Inquiry', desc: 'Observed 3 doctors during morning rounds. Timed how long it took to answer "What are this patient\'s vitals right now?" — average was 4.5 minutes across systems.' },
-      { step: '02', title: 'Information Architecture', desc: 'Ran card sorting with 6 clinical staff. Identified 4 mental model groups: urgent, patient-specific, departmental, and administrative.' },
-      { step: '03', title: 'Dashboard Design', desc: 'Designed the layout around Tufte\'s data-ink ratio principle — every pixel either shows information or creates structure. No decoration.' },
-      { step: '04', title: 'Accessibility', desc: 'WCAG AA compliant colour system, minimum 14px font throughout, and a high-contrast mode for clinical environments with variable lighting.' },
+      { step: '01', title: 'Contextual Inquiry', desc: 'Observed clinicians during rounds to measure time-to-answer critical questions.' },
+      { step: '02', title: 'Information Architecture', desc: 'Card sorting with clinical staff to align mental models.' },
+      { step: '03', title: 'Dashboard Design', desc: 'Applied data-ink principles for focused displays.' },
+      { step: '04', title: 'Accessibility', desc: 'WCAG AA colour system and high-contrast mode.' }
     ],
     tools: ['Figma', 'Dashboard Design', 'Healthcare UX', 'Data Visualization', 'WCAG AA', 'Card Sorting'],
   },
 
   finance: {
     images: [
-      'https://cdn.dribbble.com/userupload/9096970/file/original-e286463615f9a1eef818818e73e8c7bf.png',
-      'https://cdn.dribbble.com/userupload/9096970/file/original-e286463615f9a1eef818818e73e8c7bf.png',
+      'https://cdn.dribbble.com/userupload/9096970/file/original-e286463615f9a1eef818818e73e8c7bf.png'
     ],
+    heroImage: 'https://cdn.dribbble.com/userupload/9096970/file/original-e286463615f9a1eef818818e73e8c7bf.png',
     tags: [{ label: 'Mobile App', cls: 't-mobile' }, { label: 'Fintech', cls: 't-ux' }],
     title: 'Finance Bank App',
     subtitle: 'A personal banking app that answers "how much did I spend this week?" in under 2 seconds — and gets you to any action in 3 taps or fewer.',
     role: 'UI/UX Designer', timeline: '6 Weeks', platform: 'iOS',
-    overview: 'A concept redesign of a personal banking mobile app, focused on speed to insight and reduction of tap depth. The design challenge: most banking apps are built around features, not tasks. Users don\'t open a banking app to "view accounts" — they open it to check if they can afford something.',
-    problem: 'Banking apps bury key actions under nested menus. Users need 5+ taps to initiate a transfer, and the home screen shows account balances with no context — no spending trend, no category breakdown, no quick answers. "Can I afford this?" requires 3 screens of navigation to answer.',
-    solution: 'A home screen redesigned around the user\'s most frequent questions: current balance, this week\'s spend, and recent transactions — all visible without scrolling. A persistent quick-action bar for Transfer, Pay, and Top-up. Transactions grouped by category with visual spend indicators. The full transfer flow reduced to 3 taps.',
+    aboutProject: 'A concept redesign focused on speed to insight and reduction of tap depth. Reoriented the home screen around user tasks, not features.',
+    aboutImage: 'https://cdn.dribbble.com/userupload/9096970/file/original-e286463615f9a1eef818818e73e8c7bf.png',
+    userChallenges: [
+      'Key actions hidden in nested menus and no contextual spending insights on the home screen.'
+    ],
+    challengesImage: 'https://cdn.dribbble.com/userupload/9096970/file/original-e286463615f9a1eef818818e73e8c7bf.png',
+    mySolution: 'Redesigned home to show current balance, this week\'s spend, and recent transactions at a glance. Added a persistent quick-action bar and visual spend indicators to reduce tap depth.',
+    solutionImage: 'https://cdn.dribbble.com/userupload/9096970/file/original-e286463615f9a1eef818818e73e8c7bf.png',
+    designSystem: {
+      typography: 'Poppins for approachable clarity and small-size readability.',
+      colors: 'Neutral base with vibrant action accents for quick visual parsing.',
+      components: [
+        'Quick-action bar',
+        'Spending sparkline',
+        'Transaction cards',
+        'Persistent balance header'
+      ]
+    },
+    designSystemImage: 'https://cdn.dribbble.com/userupload/9096970/file/original-e286463615f9a1eef818818e73e8c7bf.png',
+    successMetrics: 'Reduced tap-depth for core actions and surface key spending insights in under 2 seconds.',
+    metricsImage: 'https://cdn.dribbble.com/userupload/9096970/file/original-e286463615f9a1eef818818e73e8c7bf.png',
+    keyTakeaway: 'Designing for the user\'s question-first behaviour (not feature-first) significantly improves speed-to-answer and task completion.',
+    takeawayImage: 'https://cdn.dribbble.com/userupload/9096970/file/original-e286463615f9a1eef818818e73e8c7bf.png',
     outcomes: [
       { n: '3 taps', label: 'To complete any core action' },
       { n: '0 scroll', label: 'Needed to see key account info' },
-      { n: '5→3', label: 'Transfer flow steps reduced' },
+      { n: '5→3', label: 'Transfer flow steps reduced' }
     ],
     process: [
-      { step: '01', title: 'Jobs-To-Be-Done', desc: 'Interviewed 8 banking app users. Found 3 core jobs: "Check balance", "Send money", "See where I\'ve spent". Designed primary nav around these, not feature categories.' },
-      { step: '02', title: 'Competitor Teardown', desc: 'Evaluated 6 banking apps against task completion time for the 3 core jobs. Identified tap-depth as the primary differentiator.' },
-      { step: '03', title: 'Design & Prototype', desc: '35 screens across home, transactions, transfer flow, notifications, and profile. Interactive Figma prototype with real banking data states.' },
-      { step: '04', title: 'Usability Test', desc: 'Remote unmoderated test with 5 participants. Task: "Send ₹500 to a contact." Average completion: 28 seconds. Zero failures.' },
+      { step: '01', title: 'Jobs-To-Be-Done', desc: 'Interviewed users to identify core tasks and designed the nav around jobs.' },
+      { step: '02', title: 'Competitor Teardown', desc: 'Analysed competitor tap-depth and optimised flows.' },
+      { step: '03', title: 'Design & Prototype', desc: 'Built an interactive prototype for rapid testing.' },
+      { step: '04', title: 'Usability Test', desc: 'Validated transfer flow reductions with remote tests.' }
     ],
     tools: ['Figma', 'Mobile Design', 'Fintech UX', 'Prototyping', 'Jobs-To-Be-Done', 'Usability Testing'],
   },
 
   smartwatch: {
     images: [
-      'https://cdn.dribbble.com/userupload/8993623/file/original-304d573b75bcdc86ea548e7aba79900d.png',
-      'https://cdn.dribbble.com/userupload/8993623/file/original-304d573b75bcdc86ea548e7aba79900d.png',
+      'https://cdn.dribbble.com/userupload/8993623/file/original-304d573b75bcdc86ea548e7aba79900d.png'
     ],
+    heroImage: 'https://cdn.dribbble.com/userupload/8993623/file/original-304d573b75bcdc86ea548e7aba79900d.png',
     tags: [{ label: 'Wearable', cls: 't-ux' }, { label: 'UX Case Study', cls: 't-ux' }],
     title: 'Smartwatch — UX Case Study',
     subtitle: 'Designing for extreme constraints: a 40mm circular display where every interaction must complete in under 5 seconds, one-handed, on the go.',
     role: 'UX Designer', timeline: '5 Weeks', platform: 'WearOS (40mm)',
-    overview: 'A wearable OS UX exploration that forces you to abandon every mobile design convention and start from the constraint up. The 40mm circular display, one-handed use, and 5-second interaction window demand entirely different patterns — swipe-based navigation, glanceable cards, muscle memory flows, and zero search.',
-    problem: 'Wearable design fails when designers apply phone-first thinking to a watch. Tiny text, multi-level menus, and gesture ambiguity are the three most common failure modes. On a 40mm screen, a misplaced 44dp touch target takes up 30% of the usable space. Scale, affordance, and hierarchy have to be rethought from scratch.',
-    solution: 'A swipe-based navigation model with 4 cardinal directions: left/right for context switching, up for quick settings, down for notifications. Each primary view is a glanceable data card with one action. No nested menus beyond 2 levels. All typography scaled to a minimum 16sp equivalent. Complications designed to answer a question in under 1 glance.',
+    aboutProject: 'A wearable OS UX exploration focused on glanceable interactions, one-handed use, and a swipe-based navigation model optimised for a 40mm circular display.',
+    aboutImage: 'https://cdn.dribbble.com/userupload/8993623/file/original-304d573b75bcdc86ea548e7aba79900d.png',
+    userChallenges: [
+      'Phone-first patterns don\'t translate to watches: tiny text, multi-level menus, and gesture ambiguity cause failures.'
+    ],
+    challengesImage: 'https://cdn.dribbble.com/userupload/8993623/file/original-304d573b75bcdc86ea548e7aba79900d.png',
+    mySolution: 'A 4-direction swipe navigation model, glanceable data cards, and a constrained design system that enforces max menu depth and short interaction durations.',
+    solutionImage: 'https://cdn.dribbble.com/userupload/8993623/file/original-304d573b75bcdc86ea548e7aba79900d.png',
+    designSystem: {
+      typography: 'Readable, scaled typography at small sizes with Poppins for consistent UI tone.',
+      colors: 'High-contrast palette for visibility under varied lighting.',
+      components: [
+        'Glance cards',
+        'Circular navigation guides',
+        'One-action controls',
+        'Micro-animation patterns'
+      ]
+    },
+    designSystemImage: 'https://cdn.dribbble.com/userupload/8993623/file/original-304d573b75bcdc86ea548e7aba79900d.png',
+    successMetrics: 'Max menu depth ≤2, interaction times under 5 seconds, and measurable reduction in task failure rates.',
+    metricsImage: 'https://cdn.dribbble.com/userupload/8993623/file/original-304d573b75bcdc86ea548e7aba79900d.png',
+    keyTakeaway: 'Designing from constraints up produces reliable, glanceable experiences for wearables that outperform phone-first adaptations.',
+    takeawayImage: 'https://cdn.dribbble.com/userupload/8993623/file/original-304d573b75bcdc86ea548e7aba79900d.png',
     outcomes: [
       { n: '≤2', label: 'Max menu depth in entire OS' },
       { n: '5 sec', label: 'Target max interaction time' },
-      { n: '4 dir', label: 'Navigation axes: simple, learnable' },
+      { n: '4 dir', label: 'Navigation axes: simple, learnable' }
     ],
     process: [
-      { step: '01', title: 'Constraint Mapping', desc: 'Documented all physical and cognitive constraints: screen diameter, bezel width, reachable zones with thumb, ambient glance duration, and one-hand grip patterns.' },
-      { step: '02', title: 'Pattern Research', desc: 'Audited WearOS, watchOS, and Tizen interaction patterns. Identified what each gets right and the gaps a new OS could fill.' },
-      { step: '03', title: 'Design System', desc: 'Built a watch-specific design system with circular layout guides, 4-direction navigation model, and component specs for round displays.' },
-      { step: '04', title: 'Prototype', desc: 'Figma prototype simulating the full swipe navigation model across 5 primary views: Time, Health, Notifications, Quick Settings, and Workout.' },
+      { step: '01', title: 'Constraint Mapping', desc: 'Documented physical and cognitive constraints for watch UX.' },
+      { step: '02', title: 'Pattern Research', desc: 'Audited existing wearable patterns and identified gaps.' },
+      { step: '03', title: 'Design System', desc: 'Built round-display component specs and navigation guides.' },
+      { step: '04', title: 'Prototype', desc: 'Simulated swipe navigation and validated interaction times.' }
     ],
     tools: ['Figma', 'Wearable Design', 'Interaction Design', 'Constraint-First Design', 'Design Systems'],
   },
 
   abtest: {
     images: [
-      'https://cdn.dribbble.com/userupload/47932599/file/c2c551c02c2b273ddedf1046fdb71438.png',
-      'https://cdn.dribbble.com/userupload/47932603/file/2f57477d749daaf5fbec7b652e73d91b.png?resize=1504x1070&vertical=center',
-      'https://cdn.dribbble.com/userupload/47932601/file/2c0454e4f2d87033b45e00af732b4f8f.png?resize=1504x1070&vertical=center',
-      'https://cdn.dribbble.com/userupload/47932602/file/afd87e3d72815f2dfd5ce3c1eea15051.png?resize=1504x1070&vertical=center'
+      'https://cdn.dribbble.com/userupload/47932600/file/cda2ebe060091e90dd3f841d86febdd2.png?resize=1504x&vertical=center',
+      'https://cdn.dribbble.com/userupload/47932603/file/2f57477d749daaf5fbec7b652e73d91b.png?resize=1504x&vertical=center',
+      'https://cdn.dribbble.com/userupload/47932601/file/2c0454e4f2d87033b45e00af732b4f8f.png?resize=1504x&vertical=center',
+      'https://cdn.dribbble.com/userupload/47932602/file/afd87e3d72815f2dfd5ce3c1eea15051.png?resize=1504x&vertical=center'
     ],
+    heroImage: 'https://cdn.dribbble.com/userupload/47932600/file/cda2ebe060091e90dd3f841d86febdd2.png?resize=1504x&vertical=center',
     tags: [{ label: 'Web', cls: 't-web' }, { label: 'A/B Testing', cls: 't-ux' }, { label: 'Research', cls: 't-brand' }],
     title: 'Profile Card A/B Test',
-    subtitle: 'A design-led A/B test comparing two layout strategies for user profile cards — using Fitt\'s Law, visual weight, and scan pattern analysis to recommend the higher-converting variant.',
+    subtitle: 'A design-led A/B test comparing two profile card layouts to measure engagement and CTA recognition.',
     role: 'UI Designer + UX Researcher', timeline: '3 Weeks', platform: 'Web',
-    overview: 'A product team needed a data-backed decision between two profile card layouts for a directory view. Rather than guessing, I designed both variants with identical content but different visual treatments — then analysed each against established UX principles and simulated scan patterns to produce a clear recommendation.',
-    problem: 'The team had strong opinions split 50/50 between a compact horizontal layout (more cards per screen) and a vertical card (better readability). Without evidence, the debate was going in circles. Neither side had a UX-grounded argument. The decision was being made on taste.',
-    solution: 'Designed both variants at full fidelity. Analysed Variant A against Fitt\'s Law for CTA reachability. Analysed Variant B against F-pattern scan behaviour. Ran a 5-second test with 12 participants to measure recall of key profile details. The vertical card (Variant B) won on recall and CTA click speed — the recommendation was unanimous with evidence.',
-    outcomes: [
-      { n: 'Variant B', label: 'Recommended — 34% faster CTA recognition' },
-      { n: '12', label: 'Participants in 5-second recall test' },
-      { n: '2 vars', label: 'Fully designed and documented at hi-fi' },
+    aboutProject: 'This project explores an A/B test of two profile card designs to understand how layout and visual presentation influence user engagement and CTA visibility.',
+    aboutImage: 'https://cdn.dribbble.com/userupload/47932600/file/cda2ebe060091e90dd3f841d86febdd2.png?resize=1504x&vertical=center',
+    userChallenges: [
+      'Users often spend only a few seconds viewing profile cards, making it difficult to highlight key information and encourage interaction.'
     ],
+    challengesImage: 'https://cdn.dribbble.com/userupload/47932603/file/2f57477d749daaf5fbec7b652e73d91b.png?resize=1504x&vertical=center',
+    mySolution: 'Version A (Structured Layout) prioritises content clarity and scanability. Version B (Immersive Layout) prioritises visual impact with a glass-morphism overlay. We measured Follow CTR, engagement, interaction speed, and preference to determine the better balance between usability and conversion.',
+    solutionImage: 'https://cdn.dribbble.com/userupload/47932601/file/2c0454e4f2d87033b45e00af732b4f8f.png?resize=1504x&vertical=center',
+    designSystem: {
+      typography: 'Readable system with clear hierarchy for small UI elements.',
+      colors: 'Neutral backgrounds with accent action colours for CTAs.',
+      components: [
+        'Profile cards',
+        'CTA buttons',
+        'Overlay states',
+        'Compact metadata rows'
+      ]
+    },
+    designSystemImage: 'https://cdn.dribbble.com/userupload/47932602/file/afd87e3d72815f2dfd5ce3c1eea15051.png?resize=1504x&vertical=center',
+    successMetrics: 'Measured Follow Button CTR, engagement, interaction speed, and overall user preference across both variants.',
+    metricsImage: 'https://cdn.dribbble.com/userupload/47932602/file/afd87e3d72815f2dfd5ce3c1eea15051.png?resize=1504x&vertical=center',
+    keyTakeaway: 'The test compares a content-focused approach against a visual-first approach to identify which design balances usability, engagement, and conversion.',
+    takeawayImage: 'https://cdn.dribbble.com/userupload/47932603/file/2f57477d749daaf5fbec7b652e73d91b.png?resize=1504x&vertical=center',
     process: [
-      { step: '01', title: 'Frame the Test', desc: 'Defined the success metric before designing: CTA click rate, time-to-identify key info, and 5-second recall score. No HiPPO decisions.' },
-      { step: '02', title: 'Design Both Variants', desc: 'Both variants designed at full hi-fi with identical content, the same image, and the same CTA text. Only layout differed.' },
-      { step: '03', title: 'Heuristic Analysis', desc: 'Applied Fitt\'s Law, visual weight distribution analysis, and F-pattern eye tracking simulation to both variants independently.' },
-      { step: '04', title: 'Recommend', desc: 'Delivered a 6-slide recommendation deck with the test methodology, participant data, and a clear design rationale for the winning variant.' },
+      { step: '01', title: 'Hypothesis & Metrics', desc: 'Defined measurable goals: Follow CTR, engagement and interaction speed.' },
+      { step: '02', title: 'Design Variants', desc: 'Created Version A (content-first) and Version B (visual-first) at hi-fi fidelity.' },
+      { step: '03', title: 'Testing', desc: 'Ran quick preference and interaction tests to gather quantitative and qualitative feedback.' },
+      { step: '04', title: 'Recommend', desc: 'Analysed results and recommended the variant that optimised for CTR and usability.' }
     ],
-    tools: ['Figma', 'A/B Design', 'Heuristic Evaluation', 'Fitt\'s Law', '5-Second Testing', 'UI Design'],
+    tools: ['Figma', 'A/B Design', 'Heuristic Evaluation', '5-Second Testing', 'UI Design'],
   },
 
   /* ── UPCOMING PROJECTS ── */
@@ -266,6 +406,15 @@ const PROJECTS_DATA = {
 
 /* ─── CAROUSEL STATE ─── */
 let _carIdx = 0, _carImgs = [];
+
+// Back to top handler for modal button
+document.addEventListener('click', function (e) {
+  const modalBtn = e.target.closest ? e.target.closest('.modal-back-top') : null;
+  if (!modalBtn) return;
+  e.preventDefault();
+  e.stopPropagation();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 let _touchStartX = 0, _touchStartY = 0;
 let _zoomScale = 1, _zoomPanX = 0, _zoomPanY = 0;
 let _isPanning = false, _panStartX = 0, _panStartY = 0;
@@ -432,34 +581,10 @@ function openModal(id) {
   if (!data) return;
   const overlay = document.getElementById('modalOverlay');
 
-  /* ── Carousel ── */
-  _carImgs = (data.images || []).filter(Boolean);
-  _carIdx = 0;
-  const track = document.getElementById('carouselTrack');
-  const dotsEl = document.getElementById('carouselDots');
-  const thumbsEl = document.getElementById('carouselThumbs');
-  track.innerHTML = '';
-  dotsEl.innerHTML = '';
-  thumbsEl.innerHTML = '';
-
-  if (_carImgs.length === 0) {
-    track.innerHTML = `<div class="modal-carousel-slide placeholder"><div class="placeholder-inner"><div class="ph-icon">🖼️</div><div class="ph-label">Add images via Dribbble or Cloudinary</div></div></div>`;
-    document.getElementById('carouselPrev').classList.add('hidden');
-    document.getElementById('carouselNext').classList.add('hidden');
-    document.getElementById('carouselCounter').textContent = '';
-    thumbsEl.style.display = 'none';
-    dotsEl.style.display = 'none';
-  } else {
-    thumbsEl.style.display = '';
-    dotsEl.style.display = '';
-    _carImgs.forEach((src, i) => {
-      track.innerHTML += `<div class="modal-carousel-slide"><img src="${src}" alt="Screen ${i + 1}" loading="lazy"></div>`;
-      dotsEl.innerHTML += `<button class="carousel-dot${i === 0 ? ' active' : ''}" onclick="carouselGoTo(${i})"></button>`;
-      thumbsEl.innerHTML += `<div class="carousel-thumb${i === 0 ? ' active' : ''}" onclick="carouselGoTo(${i})"><img src="${src}" alt="Thumb ${i + 1}" loading="lazy"></div>`;
-    });
-    _initCarouselZoom();
-    _renderCarousel();
-    _initCarouselTouch();
+  /* ── Carousel hidden — using inline section images instead */
+  const carouselEl = document.getElementById('modalCarousel');
+  if (carouselEl) {
+    carouselEl.style.display = 'none';
   }
 
   /* ── Header ── */
@@ -481,33 +606,45 @@ function openModal(id) {
   /* ── Content ── */
   let html = '';
 
+  const renderInlineImage = (src, alt) => src ? `<div class="modal-inline-image"><img src="${src}" alt="${alt}" loading="lazy"></div>` : '';
+  const renderList = items => items && items.length ? `<ul>${items.map(item => `<li>${item}</li>`).join('')}</ul>` : '';
+
   if (data.coming) {
     html += `<div class="coming-banner">⏳ Case study in progress — check back soon or <a href="#contact" onclick="closeModal()" style="color:var(--accent);text-decoration:underline;">reach out for a preview</a>.</div>`;
   }
 
-  /* Overview */
-  if (data.overview) {
-    html += `<div class="modal-section"><div class="modal-section-label">Overview</div><p>${data.overview}</p></div>`;
+  if (data.heroImage) {
+    html += renderInlineImage(data.heroImage, 'Project hero image');
   }
 
-  /* Problem / Solution side-by-side */
-  if (data.problem || data.solution) {
-    html += `<div class="modal-ps-grid">`;
-    if (data.problem) html += `<div class="modal-ps-card problem"><div class="ps-label">🔴 The Problem</div><p>${data.problem}</p></div>`;
-    if (data.solution) html += `<div class="modal-ps-card solution"><div class="ps-label">🟢 The Solution</div><p>${data.solution}</p></div>`;
-    html += `</div>`;
+  if (data.aboutProject) {
+    html += `<div class="modal-section"><div class="modal-section-label">About Project</div><p>${data.aboutProject}</p>${renderInlineImage(data.aboutImage, 'About project image')}</div>`;
   }
 
-  /* Outcomes */
-  if (data.outcomes && data.outcomes.length > 0) {
-    html += `<div class="modal-section"><div class="modal-section-label">Key Outcomes</div><div class="modal-outcomes">`;
-    data.outcomes.forEach(o => {
-      html += `<div class="modal-outcome-card"><div class="outcome-n">${o.n}</div><div class="outcome-l">${o.label}</div></div>`;
-    });
-    html += `</div></div>`;
+  if (data.userChallenges && data.userChallenges.length > 0) {
+    html += `<div class="modal-section"><div class="modal-section-label">User Challenges</div>${renderList(data.userChallenges)}${renderInlineImage(data.challengesImage, 'Challenges image')}</div>`;
   }
 
-  /* Process */
+  if (data.mySolution) {
+    html += `<div class="modal-section"><div class="modal-section-label">My Solution</div><p>${data.mySolution}</p>${renderInlineImage(data.solutionImage, 'Solution image')}</div>`;
+  }
+
+  if (data.designSystem) {
+    const systemHtml = `
+      ${data.designSystem.typography ? `<p><strong>Typography:</strong> ${data.designSystem.typography}</p>` : ''}
+      ${data.designSystem.colors ? `<p><strong>Colors:</strong> ${data.designSystem.colors}</p>` : ''}
+      ${renderList(data.designSystem.components)}`;
+    html += `<div class="modal-section"><div class="modal-section-label">Design System</div>${systemHtml}${renderInlineImage(data.designSystemImage, 'Design system image')}</div>`;
+  }
+
+  if (data.successMetrics) {
+    html += `<div class="modal-section"><div class="modal-section-label">Success Metrics</div><p>${data.successMetrics}</p>${renderInlineImage(data.metricsImage, 'Success metrics image')}</div>`;
+  }
+
+  if (data.keyTakeaway) {
+    html += `<div class="modal-section"><div class="modal-section-label">Key Takeaway</div><p>${data.keyTakeaway}</p>${renderInlineImage(data.takeawayImage, 'Key takeaway image')}</div>`;
+  }
+
   if (data.process && data.process.length > 0) {
     html += `<div class="modal-section"><div class="modal-section-label">Design Process</div>`;
     html += `<div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-top:0.5rem;">`;
@@ -521,13 +658,14 @@ function openModal(id) {
     html += `</div></div>`;
   }
 
-  /* Tools */
-  if (data.tools && data.tools.length > 0) {
-    html += `<div class="modal-section"><div class="modal-section-label">Tools & Methods</div><div class="modal-chips">`;
-    data.tools.forEach(t => { html += `<span class="modal-chip">${t}</span>`; });
-    html += `</div></div>`;
-  }
-
+  /* Tools & Methods removed per user request */
+  html += `
+  <div class="modal-back-top-wrap">
+    <button class="modal-back-top" onclick="modalBackToTop()">
+      Back to Top ↑
+    </button>
+  </div>
+`;
   document.getElementById('modalContent').innerHTML = html;
   overlay.classList.add('open');
   document.body.style.overflow = 'hidden';
@@ -651,4 +789,3 @@ const io = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.08 });
 document.querySelectorAll('.proj-card').forEach(el => io.observe(el));
-
