@@ -13,6 +13,51 @@
    ──────────────────────────────────────────────────────────────── */
 const PROJECTS_DATA = {
 
+  "Distributor Sales Represntative App": {  
+    images: [
+      "https://cdn.dribbble.com/userupload/48075202/file/5b19c623a0afb6e63173c57f74b4e048.png?resize=1504x1128&vertical=center",
+      "https://cdn.dribbble.com/userupload/48072471/file/48c8427f4d7c0d883bce807e512357fb.png?resize=1504x1128&vertical=center",
+      "https://cdn.dribbble.com/userupload/48072470/file/cdad10d8536f10a27a14effa468608ef.png?resize=1504x1128&vertical=center",
+      "https://cdn.dribbble.com/userupload/48072472/file/54c38142eacda86834eda2b904adc3ef.png?resize=1504x1128&vertical=center",
+    ],
+    heroImage: "https://cdn.dribbble.com/userupload/48075202/file/5b19c623a0afb6e63173c57f74b4e048.png?resize=1504x1128&vertical=center",
+    tags: [{ label: 'Mobile App', cls: 't-mobile' }, { label: 'UX Case Study', cls: 't-ux' }, {
+      label: 'Distributor Sales Represntative App', cls: 't-ux' }],
+    title: 'Distributor Sales Represntative App',
+    subtitle: 'A Unified Mobile App for Field Sales Teams.',
+    role: 'UI/UX Designer', timeline: '16 Weeks', platform: 'Mobile',
+    aboutProject: "This project focused on designing a mobile application for Distributor Sales Representatives (DSRs) to streamline daily field operations, including route planning, retailer visits, order management, payment collection, and performance tracking.The objective was to provide sales teams with a single platform to efficiently manage their daily tasks while reducing manual processes and improving productivity on the go.",
+    userChallenges: [
+      'Managing multiple retailer visits across different routes.',
+      'Tracking daily targets and sales performance manually.',
+      'Creating orders while visiting retailers in the field.',
+      'Collecting payments and maintaining transaction records.',
+      'Switching between multiple tools to access customer and sales information.',
+    ],
+    mySolution: 'Designed a mobile-first experience that enables DSRs to manage their complete daily workflow from one application.The solution combines route planning, retailer management, order processing, payment collection, and performance monitoring into a streamlined and intuitive interface optimized for field sales operations.',
+    solutionImage: "https://cdn.dribbble.com/userupload/48075203/file/e3deefa82d27ca31d70fb481eb4726d9.png?resize=1504x1128&vertical=center",
+    designSystem: {
+      typography: 'Clear hierarchy optimized for mobile readability and field usage.',
+      colors: 'Blue as the primary brand and action color. Green for successful transactions and completed activities.Red for pending payments and alerts.Neutral backgrounds for improved content visibility.',
+      components: [ 
+        'KPI Cards',
+        'Route Progress Tracker',
+        'Retailer Cards',
+        'Product Cards',
+        'Payment Forms',
+        'Success Notifications',
+        'Bottom Navigation Bar',
+      ],
+    },
+    outcomes: [
+      { n: '3×', label: 'Reducing administrative effort' },
+      { n: '60%', label: 'Reduction in customer follow-up calls' },
+      { n: '100%', label: 'Real-time visibility for service advisors' },
+    ],
+    takeawayImage: "https://cdn.dribbble.com/userupload/48075204/file/ab48baa1a7622897fab44cbae53c9bf8.png?resize=1504x1128&vertical=center",
+    keyTakeaway: 'By consolidating route management, order processing, and payment collection into a single mobile experience, the solution empowers DSRs to work more efficiently in the field, improve customer interactions, and increase overall sales productivity.',
+    tools: ['Figma', 'FigJam', 'Prototyping', 'User Interviews', 'Dashboard Design', 'Design Systems'],
+  },
   "Service operation dashboard": {
     images: [
       "https://cdn.dribbble.com/userupload/48072469/file/ad33055d2230abb169cf52ffc80d0c6b.png?resize=1504x1128&vertical=center",
@@ -137,7 +182,8 @@ const PROJECTS_DATA = {
   },
   english: {
     images: [
-      'https://cdn.dribbble.com/userupload/47868210/file/aec1fe9edf21990fc5943e5224626ae5.png'
+      'https://cdn.dribbble.com/userupload/47868210/file/aec1fe9edf21990fc5943e5224626ae5.png',
+      'https://cdn.dribbble.com/userupload/47868210/file/aec1fe9edf21990fc5943e5224626ae5.png',
     ],
     heroImage: 'https://cdn.dribbble.com/userupload/47868210/file/aec1fe9edf21990fc5943e5224626ae5.png',
     tags: [{ label: 'Mobile App', cls: 't-mobile' }, { label: 'UX Case Study', cls: 't-ux' }, { label: 'EdTech', cls: 't-brand' }],
@@ -789,3 +835,4 @@ const io = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.08 });
 document.querySelectorAll('.proj-card').forEach(el => io.observe(el));
+
