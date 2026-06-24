@@ -15,12 +15,12 @@ const PROJECTS_DATA = {
 
   "Distributor Sales Represntative App": {  
     images: [
-      "https://cdn.dribbble.com/userupload/48075202/file/5b19c623a0afb6e63173c57f74b4e048.png?resize=1504x1128&vertical=center",
+      "https://cdn.dribbble.com/userupload/48075202/file/33966d24cb78321c6654ebdcb51c3d1d.png?resize=1504x1128&vertical=center",
       "https://cdn.dribbble.com/userupload/48072471/file/48c8427f4d7c0d883bce807e512357fb.png?resize=1504x1128&vertical=center",
       "https://cdn.dribbble.com/userupload/48072470/file/cdad10d8536f10a27a14effa468608ef.png?resize=1504x1128&vertical=center",
       "https://cdn.dribbble.com/userupload/48072472/file/54c38142eacda86834eda2b904adc3ef.png?resize=1504x1128&vertical=center",
     ],
-    heroImage: "https://cdn.dribbble.com/userupload/48075202/file/5b19c623a0afb6e63173c57f74b4e048.png?resize=1504x1128&vertical=center",
+    heroImage: "https://cdn.dribbble.com/userupload/48075202/file/33966d24cb78321c6654ebdcb51c3d1d.png?resize=1504x1128&vertical=center",
     tags: [{ label: 'Mobile App', cls: 't-mobile' }, { label: 'UX Case Study', cls: 't-ux' }, {
       label: 'Distributor Sales Represntative App', cls: 't-ux' }],
     title: 'Distributor Sales Represntative App',
